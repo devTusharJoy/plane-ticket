@@ -67,7 +67,6 @@ nav ul li a:hover, a.active{
 }
 .plus-minus-btn{
     color: #3352F2;
-    
     padding: 2px;
     margin-top: 10px;
     word-spacing: 10px;
@@ -80,6 +79,8 @@ nav ul li a:hover, a.active{
     font-size: 25px;
     cursor: pointer;
 }
+
+
 
 .booking-form  .calculations{
     margin: 10px 0;
@@ -129,3 +130,57 @@ nav ul li a:hover, a.active{
     display: flex;
     justify-content: space-between;
 }
+
+/* modal */ 
+
+.modal-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(20, 21, 21, 0.618);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0, opacity 0.5s;
+    }
+  
+  .open {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .modal {
+    width: 500px;
+    max-width: 800px;
+    background: rgb(242, 239, 239);
+    min-height: 450px;
+    padding: 2em;
+    border-radius: 0.3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+  }
+
+  .modal h3{
+    margin-top: 20px;
+  }
+
+  .close-modal{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    box-shadow: 2px 2px 6px rgb(216, 214, 214);
+    padding:0 6px;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #3352F2;
+  }
+

@@ -55,8 +55,8 @@
                     <input id="firstClass-ticket" class="inp-style inp-width" type="number" name="" value="0">
                 </div>
                 <div class="plus-minus-btn">
-                    <p><span onclick="handleTicketNumber('firstClass', true)">+</span>
-                       <span onclick="handleTicketNumber('firstClass', false)">-</span>
+                    <p><span onclick="handleTicketNumber('firstClass', true)">&plus;</span>
+                       <span onclick="handleTicketNumber('firstClass', false)">&minus;</span>
                     </p>
                 </div>
             </div>
@@ -67,8 +67,8 @@
                     <input id="economyClass-ticket" class="inp-style inp-width" type="number" name="" value="0">
                 </div>
                 <div class="plus-minus-btn">
-                    <p><span onclick="handleTicketNumber('economyClass', true)">+</span>
-                        <span onclick="handleTicketNumber('economyClass', false)">-</span>
+                    <p><span onclick="handleTicketNumber('economyClass', true)">&plus;</span>
+                        <span onclick="handleTicketNumber('economyClass', false)">&minus;</span>
                     </p>
                 </div>
             </div>
@@ -100,7 +100,7 @@
                     </div>
                 </div>
             </div>
-            <button class="btn-style">Book Now</button>
+            <button id="btn-submit" class="btn-style" data-open="modal">Book Now</button>
         </div>
 
         <div class="booking-content">
@@ -108,6 +108,16 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicingelit. Provident voluptatibus quam fuga laborumalias veniam libero autem quasi maxime ullam vero nama imi dolor, architecto ab facilis eaque deserunt nobise voluptatibus quam</p>
         </div>
     </section>
+
+    <div class="modal-bg">
+        <div class="modal">
+            <h3>Thank You!</h3>
+            <h2>Your Flight ticket has been booked.</h2>
+            <span class="close-modal" aria-label="close modal" data-close>
+                ✕  
+            </span>
+                  
+    </div>
 
     
     <script src="/app.js"></script>

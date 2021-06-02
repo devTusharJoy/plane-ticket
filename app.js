@@ -15,6 +15,8 @@ function handleTicketNumber(ticket, increase){
     document.getElementById(ticket + '-ticket').value = newTicket;
     
     totalCost();
+    
+    
 
 }
 
@@ -41,3 +43,13 @@ function getInputValue(ticket){
     return ticketCount;
 }
 
+// modal
+
+var modalBg = document.querySelector('.modal-bg');
+
+document.querySelector('.btn-style').addEventListener('click', function(){
+  modalBg.classList.add('open');
+})
+document.querySelector('.close-modal').addEventListener('click', function(){
+  modalBg.classList.remove('open');
+})
